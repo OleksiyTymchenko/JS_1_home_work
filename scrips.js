@@ -1,19 +1,23 @@
 /*=================== 1 task =================*/
-const Name = prompt("Your name?");
-alert(`Hello` + ` ` + Name);
+const userName = prompt("Your name?");
+alert(`Hello  ${userName}`);
 
 /*========================= 2 task ====================================== */
-const Year = +prompt("Year of your birthday?");
+const userYear = +prompt("Year of your birthday?");
 const currentYear = 2022;
-
-alert(+currentYear - +Year);
+const userAge = currentYear - userYear;
+alert(userAge);
 /*============================ 3 task ==========================*/
-const square = +prompt("Length os square?");
+const sideArea = +prompt("Length os square?");
 
-alert(square + square + square + square);
+let squareArea = sideArea + sideArea + sideArea + sideArea;
+
+alert(squareArea);
 
 /*=========================== 4 task ====================================*/
 
-const squareOfCircle = +prompt("Radius of circle?");
+const radiusOfCircle = +prompt("Radius of circle?");
 
-alert(squareOfCircle * squareOfCircle * 3.14);
+const squareOfCircle = radiusOfCircle * radiusOfCircle * Math.PI;
+
+alert(squareOfCircle);
